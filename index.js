@@ -151,9 +151,5 @@ const validateAttraction = (attraction) => {
 	return schema.validate(attraction);
 };
 
-// Start the server
-app.listen(PORT, () => {
-	console.log(`Listening on port ${PORT}`);
-});
-
+// Export the app for Vercel
 module.exports = app;
